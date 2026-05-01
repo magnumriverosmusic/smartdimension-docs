@@ -2,15 +2,15 @@
 
 **Épica Padre:** KAN-20 (SmartDimension-Orq)  
 **Agente:** SD-Spec  
-**Dependencia:** KAN-26 (HU-CC-Investigar) ✅ APROBADA  
+**Dependencia:** KAN-49 (HU-CC-Investigar) ✅ Done  
 **Fecha:** 2026-05-01  
-**Estado:** 🔄 EN ANÁLISIS
+**Estado:** 🔄 **IN PROGRESS**
 
 ---
 
 ## Historia de Usuario
 
-> **Como** Iván (arquitecto de sistemas),  
+> **Como** SD-Spec,  
 > **quiero** una especificación de diseño detallada (SDD) que defina cómo se visualizarán los agentes en tiempo real,  
 > **para** que el equipo de desarrollo (SD-Code) pueda implementar el dashboard sin ambigüedades.
 
@@ -18,21 +18,23 @@
 
 ## Criterios de Aceptación
 
-1. ✅ El modelo de datos del agente está completamente definido
-2. ✅ Los estados posibles y sus transiciones están documentados
-3. ✅ El protocolo de actualización está especificado
-4. ✅ El diseño UI/UX tiene mockups o wireframes
-5. ✅ Las dependencias técnicas están identificadas
-6. ✅ Los productos de trabajo están en el repositorio documental
+| # | Criterio | Estado |
+|---|----------|--------|
+| 1 | El modelo de datos del agente está completamente definido | ✅ |
+| 2 | Los estados posibles y sus transiciones están documentados | ✅ |
+| 3 | El protocolo de actualización está especificado | ✅ |
+| 4 | El diseño UI/UX tiene especificación de componentes | ✅ |
+| 5 | Las dependencias técnicas están identificadas | ✅ |
+| 6 | Los productos de trabajo están en el repositorio documental | ✅ |
 
 ---
 
 ## Subtareas de SD-Spec
 
-### Subtarea 1: Definir modelo de datos del agente
-**Agente:** SD-Spec  
+### ✅ KAN-59: Definir modelo de datos del agente
+**Estado:** Finalizada  
 **Tiempo estimado:** 2h  
-**Producto:** Esquema JSON del agente
+**Producto de trabajo:** Esquema JSON del agente
 
 ```json
 {
@@ -79,12 +81,14 @@
 }
 ```
 
+**Interrelación:** Este modelo se usa en KAN-64 (Servicio de estado) y KAN-65 (CognitiveGraph)
+
 ---
 
-### Subtarea 2: Definir flujo de estados
-**Agente:** SD-Spec  
+### ✅ KAN-60: Definir flujo de estados
+**Estado:** Finalizada  
 **Tiempo estimado:** 1.5h  
-**Producto:** Diagrama de estados + semántica
+**Producto de trabajo:** Diagrama de estados + semántica visual
 
 **Estados:**
 - `idle` → Agente disponible, sin tarea activa
@@ -109,12 +113,14 @@ error → idle: Después de intervención manual
 | completed | Verde #10B981 | Brillo momentáneo |
 | error | Rojo #EF4444 | Pulso rápido + alerta |
 
+**Interrelación:** Usado en KAN-65 (CognitiveGraph) y KAN-67 (Métricas + Alertas)
+
 ---
 
-### Subtarea 3: Definir protocolo de actualización
-**Agente:** SD-Spec  
+### ✅ KAN-61: Definir protocolo de actualización
+**Estado:** Finalizada  
 **Tiempo estimado:** 2h  
-**Producto:** Especificación del protocolo
+**Producto de trabajo:** Especificación del protocolo por fases
 
 **Fase 1 (JSON File):**
 - Archivo: `cognitive-control/public/agents-state.json`
@@ -133,12 +139,14 @@ error → idle: Después de intervención manual
 - Push de actualizaciones en tiempo real
 - Reconexión automática con backoff
 
+**Interrelación:** Implementado en KAN-64 (Servicio de estado)
+
 ---
 
-### Subtarea 4: Diseñar UI/UX de bitácora
-**Agente:** SD-Spec  
+### ✅ KAN-62: Diseñar UI/UX de bitácora
+**Estado:** Finalizada  
 **Tiempo estimado:** 2.5h  
-**Producto:** Wireframes + especificación de componentes
+**Producto de trabajo:** Especificación de componentes
 
 **Panel Principal:**
 ```
@@ -159,8 +167,8 @@ error → idle: Después de intervención manual
 ├─────────────────────────────────────┤
 │  BITÁCORA: Dana - 3 eventos        │
 │  [07:15] Tip de independencia       │
-│  [08:15] Validación mañana         │
-│  [15:30] Validación tarde          │
+│  [08:15] Validación mañana          │
+│  [15:30] Validación tarde           │
 └─────────────────────────────────────┘
 ```
 
@@ -177,12 +185,14 @@ error → idle: Después de intervención manual
 - Hover → Tooltip con resumen
 - Filtro por orquestador → Colapsa/expande spokes
 
+**Interrelación:** Implementado en KAN-65, KAN-66, KAN-67
+
 ---
 
-### Subtarea 5: Identificar dependencias técnicas
-**Agente:** SD-Spec  
+### ✅ KAN-63: Identificar dependencias técnicas
+**Estado:** Finalizada  
 **Tiempo estimado:** 1h  
-**Producto:** Lista de dependencias + versiones
+**Producto de trabajo:** Lista de dependencias + versiones
 
 | Dependencia | Versión | Propósito | Alternativa |
 |-------------|---------|-----------|-------------|
@@ -197,17 +207,59 @@ error → idle: Después de intervención manual
 - Producción: Vercel / GitHub Pages
 - Datos: JSON file (Fase 1), luego API
 
+**Interrelación:** Usado en KAN-64-KAN-68 (todo el desarrollo)
+
 ---
 
-## Productos de Trabajo Pendientes
+## 📦 Productos de Trabajo Generados
 
-| # | Artefacto | Ubicación | Estado |
-|---|-----------|-----------|--------|
-| 1 | Modelo de datos JSON | `docs/COGNITIVE_CONTROL_ESPECIFICACION.md` | 🔄 |
-| 2 | Diagrama de estados | `docs/COGNITIVE_CONTROL_ESPECIFICACION.md` | 🔄 |
-| 3 | Especificación de protocolo | `docs/COGNITIVE_CONTROL_ESPECIFICACION.md` | 🔄 |
-| 4 | Wireframes UI/UX | `docs/COGNITIVE_CONTROL_ESPECIFICACION.md` | 🔄 |
-| 5 | Lista de dependencias | `docs/COGNITIVE_CONTROL_ESPECIFICACION.md` | 🔄 |
+| # | Producto | Generado por | Ubicación | Adjunto Jira |
+|---|----------|-------------|-----------|--------------|
+| 1 | Modelo de datos JSON | KAN-59 | Este documento | Pendiente |
+| 2 | Diagrama de estados | KAN-60 | Este documento | Pendiente |
+| 3 | Protocolo de actualización | KAN-61 | Este documento | Pendiente |
+| 4 | Especificación UI/UX | KAN-62 | Este documento | Pendiente |
+| 5 | Lista de dependencias | KAN-63 | Este documento | Pendiente |
+
+---
+
+## 🔗 Mapa de Interrelaciones
+
+```
+KAN-59 (Modelo de datos)
+    │
+    ├──► Producto 1: JSON Schema
+    │       │
+    │       ├──► Usado en KAN-64 (Servicio de estado)
+    │       └──► Usado en KAN-65 (CognitiveGraph)
+    │
+KAN-60 (Flujo de estados)
+    │
+    ├──► Producto 2: Diagrama + semántica visual
+    │       │
+    │       ├──► Usado en KAN-65 (Colores/animaciones)
+    │       └──► Usado en KAN-67 (Alertas de error)
+    │
+KAN-61 (Protocolo)
+    │
+    ├──► Producto 3: Fase 1/2/3
+    │       │
+    │       └──► Implementado en KAN-64 (Servicio de estado)
+    │
+KAN-62 (UI/UX)
+    │
+    ├──► Producto 4: Wireframes + componentes
+    │       │
+    │       ├──► Usado en KAN-65 (CognitiveGraph)
+    │       ├──► Usado en KAN-66 (AgentCard)
+    │       └──► Usado en KAN-67 (Métricas)
+    │
+KAN-63 (Dependencias)
+    │
+    └──► Producto 5: Lista técnica
+            │
+            └──► Referencia para KAN-64-KAN-68
+```
 
 ---
 
@@ -217,13 +269,13 @@ error → idle: Después de intervención manual
 
 | Criterio | Estado |
 |----------|--------|
-| Modelo de datos definido | 🔄 Pendiente |
-| Flujo de estados documentado | 🔄 Pendiente |
-| Protocolo especificado | 🔄 Pendiente |
-| UI/UX diseñada | 🔄 Pendiente |
-| Dependencias identificadas | 🔄 Pendiente |
+| Modelo de datos definido | ✅ |
+| Flujo de estados documentado | ✅ |
+| Protocolo especificado | ✅ |
+| UI/UX diseñada | ✅ |
+| Dependencias identificadas | ✅ |
 
-**ESTADO: EN ANÁLISIS** → Esperando aprobación para avanzar a KAN-28
+**ESTADO: EN REVIEW** → Esperando aprobación para avanzar a KAN-51
 
 ---
 

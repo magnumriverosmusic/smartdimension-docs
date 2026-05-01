@@ -1,8 +1,8 @@
-# KAN-27: Especificación — Cognitive Control
+# KAN-27: HU-CC-Especificar
 
-**Feature:** KAN-47 (Cognitive Control)  
+**Épica Padre:** KAN-20 (SmartDimension-Orq)  
 **Agente:** SD-Spec  
-**Dependencia:** KAN-26 (Investigación) ✅ APROBADA  
+**Dependencia:** KAN-26 (HU-CC-Investigar) ✅ APROBADA  
 **Fecha:** 2026-05-01  
 **Estado:** 🔄 EN ANÁLISIS
 

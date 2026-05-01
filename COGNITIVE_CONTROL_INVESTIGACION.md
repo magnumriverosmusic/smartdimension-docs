@@ -1,6 +1,6 @@
-# KAN-26: Investigación Preliminar — Cognitive Control
+# KAN-26: HU-CC-Investigar
 
-**Feature:** KAN-47 (Cognitive Control)  
+**Épica Padre:** KAN-20 (SmartDimension-Orq)  
 **Agente:** SD-Investiga  
 **Fecha:** 2026-05-01  
 **Estado:** ✅ COMPLETADA

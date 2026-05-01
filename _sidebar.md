@@ -11,9 +11,11 @@
 
 - **Sistemas**
   - **Cognitive Control**
-    - [KAN-26: Investigación](COGNITIVE_CONTROL_INVESTIGACION.md)
-    - [KAN-27: Especificación](COGNITIVE_CONTROL_ESPECIFICACION.md) 🔄
-    - [KAN-28: Desarrollo](COGNITIVE_CONTROL_DESARROLLO.md) 🔄
-    - [KAN-29: Pruebas](COGNITIVE_CONTROL_PRUEBAS.md) 🔄
-    - [KAN-30: Documentación](COGNITIVE_CONTROL_DOCUMENTACION.md) 🔄
-    - [KAN-31: Reflexión](COGNITIVE_CONTROL_REFLEXION.md) 🔄
+    - [KAN-20: Épica SmartDimension-Orq](COGNITIVE_CONTROL_EPIKA.md)
+    - **Historias de Usuario**
+      - [HU-CC-Investigar (KAN-26)](COGNITIVE_CONTROL_INVESTIGACION.md)
+      - [HU-CC-Especificar (KAN-27)](COGNITIVE_CONTROL_ESPECIFICACION.md)
+      - [HU-CC-Desarrollar (KAN-28)](COGNITIVE_CONTROL_DESARROLLO.md)
+      - [HU-CC-Probar (KAN-29)](COGNITIVE_CONTROL_PRUEBAS.md)
+      - [HU-CC-Documentar (KAN-30)](COGNITIVE_CONTROL_DOCUMENTACION.md)
+      - [HU-CC-Reflexionar (KAN-31)](COGNITIVE_CONTROL_REFLEXION.md)

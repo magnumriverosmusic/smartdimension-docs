@@ -94,11 +94,13 @@
 ### Producto 1: Investigación Completa
 **Generado por:** KAN-55 + KAN-56 + KAN-57 + KAN-58  
 **Ubicación:** `docs/COGNITIVE_CONTROL_INVESTIGACION.md`  
+**Adjunto en Jira:** KAN-49 (ID: 10000, 7975 bytes) ✅  
 **Interrelación:** Este documento consolida todos los hallazgos y sirve como entrada para KAN-50 (Especificación)
 
 ### Producto 2: Datos de Agentes con Estado Cognitivo
 **Generado por:** KAN-57 (Identificación de riesgos)  
 **Ubicación:** `swarm-ctrl/agents/*.json`  
+**Adjunto en Jira:** KAN-49 (ID: 10001, 1955 bytes) ✅  
 **Interrelación:** Define el modelo de datos que se usará en KAN-50 (Modelo JSON) y KAN-51 (Servicio de estado)
 
 ### Producto 3: Estructura de Navegación del Docsify

@@ -1,4 +1,4 @@
-# KAN-26: HU-CC-Investigar
+# KAN-49: HU-CC-Investigar
 
 **Épica Padre:** KAN-20 (SmartDimension-Orq)  
 **Agente:** SD-Investiga  

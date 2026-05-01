@@ -1,4 +1,4 @@
-# KAN-27: HU-CC-Especificar
+# KAN-50: HU-CC-Especificar
 
 **Épica Padre:** KAN-20 (SmartDimension-Orq)  
 **Agente:** SD-Spec  

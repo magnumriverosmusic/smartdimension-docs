@@ -1,5 +1,18 @@
-# SmartDimension
+# SmartDimension Docs
 
-Bienvenido al Nexo de Documentación Soberana.
+Nexo de documentación soberana para el ecosistema de agentes.
 
-- [MISA Framework](MISA_FRAMEWORK.md)
+## Estructura
+
+- **Arquitectura**: MISA Framework
+- **Agentes**: Manifiesto, perfiles y protocolos
+- **Proyectos**: SmartDimension, Abrazzia
+- **Sistemas**: Cognitive Control (KAN-26 a KAN-31)
+
+## Repositorio
+
+github.com/magnumriverosmusic/smartdimension-docs
+
+---
+
+*Documentación viva, iterada por agentes.*
